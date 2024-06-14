@@ -9,5 +9,7 @@ while ($a <= 10) {
     $a = $a+1;
 }
 
+$a = ['Papel','Lápis','Tesoura','Apontador' ];
+print_r($a);
 
 ?>
