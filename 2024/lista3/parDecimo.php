@@ -10,6 +10,5 @@ while ($a <= 10) {
 }
 
 $a = ['Papel','Lápis','Tesoura','Apontador' ];
-print_r($a);
 
 ?>
