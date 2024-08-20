@@ -6,11 +6,15 @@
     justify-content: center;
     align-items: center;    
 }
-.formCont{
-    width: 100%;
+.container{
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 100vh;
-    margin: 40px;
+    justify-content: center;    
+}
+.centralizar{
+    margin: 5vh;
+    margin-left: 55vh;
+    margin-right: 55vh;
+    align-items: center;
+    justify-content: center;
 }
