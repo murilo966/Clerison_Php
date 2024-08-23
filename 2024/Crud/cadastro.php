@@ -44,92 +44,87 @@
 <!-- Body -->
     <body>
         <br><br><br>
-        <div class="container">
-            <h2>Cadastro de Usuários</h2>
-        </div>
-            <div class="centralizar">
-                <form action="" method="post">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <input class="form-control" type="text" placeholder="Nome" name="nome">
-                        </div>
-                        <div class="col-md-4" >
-                            <input class="form-control" type="text" placeholder="Email" name="email">
-                        </div>
-                        <div class="col-md-4">
-                            <input class="form-control" type="text" placeholder="Senha" name="senha">
-                        </div>
-            
-            
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-6">
-                            <input class="form-control mt-2" type="text" name="end" id="" placeholder="Digite o endereço....">
-                        </div>
-                        <div class="col-md-2">
-                            <input class="form-control mt-2" type="text" name="nEnd" id="" placeholder="Núm">
-                        </div>
-                        <div class="col-md-4">
-                            <input class="form-control mt-2" type="text" name="comp" id="" placeholder="Complemento">
-                        </div>
-
-                    </div>
-                    
-                    <div class="row mt-2">
-                        <div class="col-md-3">
-                            <input class="form-control" type="text" placeholder="Cidade" name="Cidade">
-                        </div>
-                        <div class="col-md-3" >
-                            <input class="form-control" type="text" placeholder="Estado" name="Estado">
-                        </div>
-                        <div class="col-md-3">
-                            <input class="form-control" type="text" placeholder="RG" name="RG">
-                        </div>
-                        <div class="col-md-3">
-                            <input class="form-control" type="text" placeholder="CPF" name="CPF">
-                        </div>
-
-                        <div class="col-md-4"></div>
-                        <div class="col-md-4-mt-26">
-                            <select class="form-control"name="estado" id="">
-                                <option value="">Selecione o estado...</option>
-                                <option value="AC">Acre</option>
-                                <option value="AL">Alagoas</option>
-                                <option value="AP">Amapá</option>
-                                <option value="AM">Amazonas</option>
-                                <option value="BA">Bahia</option>
-                                <option value="CE">Ceará</option>
-                                <option value="DF">Distrito Federal</option>
-                                <option value="ES">Espírito Santo</option>
-                                <option value="GO">Goiás</option>
-                                <option value="MA">Maranhão</option>
-                                <option value="MT">Mato Grosso</option>
-                                <option value="MS">Mato Grosso do Sul</option>
-                                <option value="MG">Minas Gerais</option>
-                                <option value="PA">Pará</option>
-                                <option value="PB">Paraíba</option>
-                                <option value="PR">Paraná</option>
-                                <option value="PE">Pernambuco</option>
-                                <option value="PI">Piauí</option>
-                                <option value="RJ">Rio de Janeiro</option>
-                                <option value="RN">Rio Grande do Norte</option>
-                                <option value="RS">Rio Grande do Sul</option>
-                                <option value="RO">Rondônia</option>
-                                <option value="RR">Roraima</option>
-                                <option value="SC">Santa Catarina</option>
-                                <option value="SP">São Paulo</option>
-                                <option value="SE">Sergipe</option>
-                                <option value="TO">Tocantins</option>
-                                <option value="EX">Estrangeiro</option>
-                            </select>
-                        </div>
-                    </div>
-
-
-            
-                </form>
+            <div class="container">
+                <h2>Cadastro de Usuários</h2>
             </div>
+                <div class="centralizar">
+                    <form action="bd.php" method="post">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <input class="form-control" type="text" placeholder="Nome" name="nome" required>
+                            </div>
+                            <div class="col-md-4" >
+                                <input class="form-control" type="text" placeholder="Email" name="email" required>
+                            </div>
+                            <div class="col-md-4">
+                                <input class="form-control" type="text" placeholder="Senha" name="senha" required>
+                            </div>
+            
+            
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input class="form-control mt-2" type="text" name="Ender" id="" placeholder="Digite o endereço...." required>
+                            </div>
+                            <div class="col-md-2">
+                                <input class="form-control mt-2" type="text" name="nEnder" id="" placeholder="Núm" required>
+                            </div>
+                            <div class="col-md-4">
+                                <input class="form-control mt-2" type="text" name="comp" id="" placeholder="Complemento" required>
+                            </div>
+                        </div>
+            
+                        <div class="row mt-2">
+                            <div class="col-md-4">
+                                <input class="form-control" type="text" placeholder="Cidade" name="Cidade" required>
+                            </div>
+                            <div class="col-md-4">
+                                <input class="form-control" type="text" placeholder="RG" name="RG" required>
+                            </div>
+                            <div class="col-md-4">
+                                <input class="form-control" type="text" placeholder="CPF" name="CPF" required>
+                            </div>
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4-mt-26">
+                                <select class="form-control mt-2"name="Estado" id="" required>
+                                    <option value="">Selecione o estado...</option>
+                                    <option value="AC">Acre</option>
+                                    <option value="AL">Alagoas</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="DF">Distrito Federal</option>
+                                    <option value="ES">Espírito Santo</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MA">Maranhão</option>
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="PR">Paraná</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="RR">Roraima</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="SE">Sergipe</option>
+                                    <option value="TO">Tocantins</option>
+                                    <option value="EX">Estrangeiro</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="container text-center">
+                            <input class="btn btn-primary btn-m w-50 mt-2" type="submit" value="Enviar">
+                        </div>
+            
+                    </form>
+                </div>
         <br><br>
 
 
