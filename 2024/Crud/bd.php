@@ -18,6 +18,7 @@
     $sql->execute(
         array($_POST['nome'],
             $_POST['email'],
+            sha1($_POST['senha']),
             $_POST['Ender'],
             $_POST['nEnder'],
             $_POST['comp'],
@@ -25,8 +26,7 @@
             $_POST['RG'],
             $_POST['CPF'],
             $_POST['Estado'],
-            /* data */
-            sha1($_POST['senha'])
+            date("d-m-Y H:i:s")  
         ));
 
 ?>
