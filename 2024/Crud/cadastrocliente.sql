@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 27-Ago-2024 às 17:36
+-- Tempo de geração: 06-Set-2024 às 17:32
 -- Versão do servidor: 10.4.27-MariaDB
 -- versão do PHP: 8.0.25
 
@@ -47,7 +47,8 @@ CREATE TABLE `cadastrocliente` (
 --
 
 INSERT INTO `cadastrocliente` (`id`, `nome`, `email`, `senha`, `endereco`, `nendereco`, `complemento`, `cidade`, `rg`, `cpf`, `estado`, `data`) VALUES
-(1, 'juninho', 'juninho@gmail.com', 'bbc99e2c92e82e6180c5c2e3ada3c1c8ec5815e0', 'rua do juninho', '12-35', 'casa preta', 'Bauru', '223458096745', '1624761512', 'AP', '0000-00-00');
+(1, 'juninho', 'juninho@gmail.com', 'bbc99e2c92e82e6180c5c2e3ada3c1c8ec5815e0', 'rua do juninho', '12-35', 'casa preta', 'Bauru', '223458096745', '1624761512', 'AP', '0000-00-00'),
+(3, 'Henrique Ramos Sales', 'sales@gmail.com', 'f493f2f444ec8f218a125c9f1297eabaf2fb4183', 'rua pqp', '2-97', 'bloco 42', 'bauru', '464698465', '36784562', 'SP', '0000-00-00');
 
 --
 -- Índices para tabelas despejadas
@@ -67,7 +68,7 @@ ALTER TABLE `cadastrocliente`
 -- AUTO_INCREMENT de tabela `cadastrocliente`
 --
 ALTER TABLE `cadastrocliente`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

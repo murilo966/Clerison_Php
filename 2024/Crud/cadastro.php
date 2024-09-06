@@ -48,6 +48,7 @@
                 <h2>Cadastro de Usuários</h2>
             </div>
                 <div class="centralizar">
+
                     <form action="bd.php" method="post">
                         <div class="row">
                             <div class="col-md-4">
@@ -57,7 +58,7 @@
                                 <input class="form-control" type="text" placeholder="Email" name="email" required>
                             </div>
                             <div class="col-md-4">
-                                <input class="form-control" type="text" placeholder="Senha" name="senha" required>
+                                <input class="form-control" type="password" placeholder="Senha" name="senha" required>
                             </div>
             
             
@@ -122,6 +123,7 @@
                         <div class="container text-center">
                             <input class="btn btn-primary btn-m w-50 mt-2" type="submit" value="Enviar">
                         </div>
+                        
             
                     </form>
                 </div>
