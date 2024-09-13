@@ -1,6 +1,6 @@
 <?php
     
-    echo "<br>" . $_POST['nome'];
+/*     echo "<br>" . $_POST['nome'];
     echo "<br>" . $_POST['email'];
     echo "<br>" . $_POST['senha'];
     echo "<br>" . $_POST['Ender'];
@@ -9,7 +9,7 @@
     echo "<br>" . $_POST['Cidade'];
     echo "<br>" . $_POST['RG'];
     echo "<br>" . $_POST['CPF'];
-    echo "<br>" . $_POST['Estado'];
+    echo "<br>" . $_POST['Estado']; */
 
     $pdo = new PDO('mysql:host=localhost;dbname=phpbd','root','');
 
@@ -27,6 +27,9 @@
             $_POST['CPF'],
             $_POST['Estado'],
             date("d-m-Y H:i:s")  
-        ));
+        )
+    );
+
+    echo "<meta http-equiv='refresh' content='0; url=login.php'>"; 
 
 ?>

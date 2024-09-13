@@ -15,13 +15,13 @@
         <form action="buscar.php" method="post">
             <div class="row">
                 <div class="col-md-12 mt-2">
-                    <input class="form-control" type="email" name="email" required>
+                    <input class="form-control" type="email" name="email" placeholder="digite seu email aqui..." required>
                 </div>
             </div>
             
             <div class="row">
                 <div class="col-md-12 mt-2">
-                    <input class="form-control" type="password" name="senha" required>
+                    <input class="form-control" type="password" name="senha" placeholder="digite sua senha aqui..." required>
                 </div>
             </div>
             <div class="row">
