@@ -17,11 +17,14 @@ if (!empty($dados)) {
 
     $_SESSION['email'] = $dados[0]['email'];
     echo "<meta http-equiv='refresh' content='0; url=inicio.php'>"; 
-}else{
+}else{ 
+    session_start();
+    $_SESSION['erro']= "<div class='alert alert-danger' role='alert'>Usuário ou senha não encontrados!</div>";
     echo "<meta http-equiv='refresh' content='0; url=login.php'>"; 
 }
 
 ?>
+
 
 
 

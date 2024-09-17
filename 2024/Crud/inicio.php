@@ -1,3 +1,14 @@
+<?php 
+    session_start();
+    if (empty($_SESSION['email'])) {
+        echo "<script>alert('Usuário não logado! Faça o Login...')</script>"; 
+        echo "<meta http-equiv='refresh' content='0; url=login.php'>"; 
+    }
+
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,11 +19,7 @@
 </head>
 <body>
     <H1>Entrou na home, parabens zé!</H1>
+    <br>
+    <a href="sair.php">deslogar?</a>
 </body>
 </html>
-<?php 
-
-
-
-
-?>
