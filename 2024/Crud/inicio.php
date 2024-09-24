@@ -1,11 +1,13 @@
 <?php 
-    session_start();
-    if (empty($_SESSION['email'])) {
-        echo "<script>alert('Usuário não logado! Faça o Login...')</script>"; 
-        echo "<meta http-equiv='refresh' content='0; url=login.php'>"; 
-    }
 
+include_once "buscarUsuarios.php";
+session_start();
 
+if (empty($_SESSION['email'])) {
+    echo "<script>alert('Usuário não logado! Faça o Login...')</script>"; 
+    echo "<meta http-equiv='refresh' content='0; url=login.php'>"; 
+} 
+    
 
 ?>
 
@@ -18,8 +20,17 @@
     <title>Home</title>
 </head>
 <body>
+    
     <H1>Entrou na home, parabens zé!</H1>
     <br>
     <a href="sair.php">deslogar?</a>
+
+    <?php 
+        $dados = BuscarUsuário();
+        echo"<pre>";
+            print_r($dados);
+        echo"</pre>"
+    
+    ?>
 </body>
 </html>
