@@ -27,11 +27,15 @@ if (empty($_SESSION['email'])) {
     <br>
     <a href="sair.php">deslogar?</a>
 
-    <?php 
-        $dados = BuscarUsuário();
     
-    ?>
     <div class="container text-center">
+        <?php 
+            $dados = BuscarUsuário();
+            if ($_SESSION['erro']) {
+                echo $_SESSION['erro'];
+                $_SESSION['erro']='';
+            }
+        ?>
         <div class="row border border-2">
             <div class="col-md-3">
                 <h3>ID</h3>
@@ -61,7 +65,7 @@ if (empty($_SESSION['email'])) {
                         echo $dados[$key]['email'];
                     echo"</div>";
                     echo"<div class='col-md-3'>";
-                        echo "<a class='btn btn-primary'href='editar.php'>Editar</a>";
+                        echo "<a class='btn btn-primary'href='editarr.php?id=".$dados[$key]['id']."'>Editar</a>";
                         echo "<a class='btn btn-danger'href='excluir.php?id=".$dados[$key]['id']."'>Excluir</a>";
                     echo "</div>";
                 echo"</div>";

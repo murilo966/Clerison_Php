@@ -14,8 +14,9 @@
         <?php
             session_start();
             if ($_SESSION['erro']) {
-                echo $_SESSION['erro'];
                 $_SESSION['erro']='';
+                echo $_SESSION['erro'];
+                
             }
 
         ?>
@@ -39,6 +40,7 @@
                     <input class="form-control btn btn-primary w-25" type="submit" value="Entrar">
                 </div>
             </div>
+            <div class="row"><a href="cadastro.php">Cadastre-se</a></div>
         </form>
     </div>
 
