@@ -9,7 +9,7 @@
         /* Executar o sql no banco de dados */
         $sql->execute(array($id));
 
-        /* Organiza is dados pesquisados */
+        /* Organiza os dados pesquisados */
         $dados = $sql->fetchAll(PDO::FETCH_ASSOC);
 
         return $dados;

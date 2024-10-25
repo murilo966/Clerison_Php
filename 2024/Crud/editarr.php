@@ -8,6 +8,7 @@
         echo "<meta http-equiv='refresh' content='0; url=login.php'>"; 
     } else {
         $dados = BuscarDados($_GET['id']);
+        print_r($dados);
         
     }
 
@@ -55,17 +56,17 @@
     <body>
         <br><br><br>
             <div class="container">
-                <h2>Cadastro de Usuários</h2>
+                <h2>Editar dados do Usuários</h2>
             </div>
                 <div class="centralizar">
 
                     <form action="bd.php" method="post">
                         <div class="row">
                             <div class="col-md-4">
-                                <input class="form-control" type="text" placeholder="Nome" name="nome" required>
+                                <input class="form-control" type="text" placeholder="Nome" name="nome" value="<?php echo $dados[0]['nome']; ?>" required>
                             </div>
                             <div class="col-md-4" >
-                                <input class="form-control" type="text" placeholder="Email" name="email" required>
+                                <input class="form-control" type="text" placeholder="Email" name="email" value="<?php echo $dados[0]['email']; ?>" required>
                             </div>
                             <div class="col-md-4">
                                 <input class="form-control" type="password" placeholder="Senha" name="senha" required>
@@ -75,25 +76,25 @@
                         </div>
                         <div class="row">
                             <div class="col-md-6">
-                                <input class="form-control mt-2" type="text" name="Ender" id="" placeholder="Digite o endereço...." required>
+                                <input class="form-control mt-2" type="text" name="Ender" id="" placeholder="Digite o endereço...." value="<?php echo $dados[0]['endereco']; ?>" required>
                             </div>
                             <div class="col-md-2">
-                                <input class="form-control mt-2" type="text" name="nEnder" id="" placeholder="Núm" required>
+                                <input class="form-control mt-2" type="text" name="nEnder" id="" placeholder="Núm" value="<?php echo $dados[0]['nendereco']; ?>" required>
                             </div>
                             <div class="col-md-4">
-                                <input class="form-control mt-2" type="text" name="comp" id="" placeholder="Complemento" required>
+                                <input class="form-control mt-2" type="text" name="comp" id="" placeholder="Complemento" value="<?php echo $dados[0]['complemento']; ?>" required>
                             </div>
                         </div>
             
                         <div class="row mt-2">
                             <div class="col-md-4">
-                                <input class="form-control" type="text" placeholder="Cidade" name="Cidade" required>
+                                <input class="form-control" type="text" placeholder="Cidade" name="Cidade" value="<?php echo $dados[0]['cidade']; ?>" required>
                             </div>
                             <div class="col-md-4">
-                                <input class="form-control" type="text" placeholder="RG" name="RG" required>
+                                <input class="form-control" type="text" placeholder="RG" name="RG" value="<?php echo $dados[0]['rg']; ?>" required>
                             </div>
                             <div class="col-md-4">
-                                <input class="form-control" type="text" placeholder="CPF" name="CPF" required>
+                                <input class="form-control" type="text" placeholder="CPF" name="CPF" value="<?php echo $dados[0]['cpf']; ?>" required>
                             </div>
                             <div class="col-md-4"></div>
                             <div class="col-md-4-mt-26">
