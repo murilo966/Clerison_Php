@@ -2,7 +2,7 @@
 
     $pdo = new PDO('mysql:host=localhost;dbname=phpbd','root','');
 
-    $sql = $pdo->prepare("UPDATE `cadastrocliente` SET nome=?,email=?,Ender=?,nEnder=?,comp=?,Cidade=?,RG=?,CPF=?,Estado=? WHERE id=?");
+    $sql = $pdo->prepare("UPDATE `cadastrocliente` SET nome=?,email=?,endereco=?,nendereco=?,complemento=?,cidade=?,rg=?,cpf=?,Estado=? WHERE id=?");
 
     $sql->execute(
         array($_POST['nome'],
@@ -16,6 +16,7 @@
             $_POST['Estado'],
             $_POST['id']
         ));
-    print_r($_POST);
+
+    echo "<meta http-equiv='refresh' content='0; url=inicio.php'>"; 
 
 ?>
