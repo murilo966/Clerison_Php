@@ -60,7 +60,7 @@
             </div>
                 <div class="centralizar">
 
-                    <form action="bd.php" method="post">
+                    <form action="update.php" method="post">
                         <div class="row">
                             <div class="col-md-4">
                                 <input class="form-control" type="text" placeholder="Nome" name="nome" value="<?php echo $dados[0]['nome']; ?>" required>
@@ -69,7 +69,7 @@
                                 <input class="form-control" type="text" placeholder="Email" name="email" value="<?php echo $dados[0]['email']; ?>" required>
                             </div>
                             <div class="col-md-4">
-                                <input class="form-control" type="password" placeholder="Senha" name="senha" required>
+                                <input class="form-control" type="password" placeholder="Senha" name="senha" disabled>
                             </div>
             
             
@@ -134,6 +134,7 @@
                         <div class="container text-center">
                             <input class="btn btn-primary btn-m w-50 mt-2" type="submit" value="Enviar">
                         </div>
+                        <input class="invisible" type="text" name="id" value="<?php echo $dados[0]['id']; ?>">
                         
             
                     </form>
